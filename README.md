@@ -50,7 +50,36 @@ Leetcode有个很严重的问题，就是大多没有数据范围。
 判断带有通配符的字符串是否相等。
 
 做法1：直接递归做，遇到*的话，就一直往后枚举递归，匹配多少个。至少python这样直接搞会TLE，然后就得记忆化一下。
+
 做法2：DP
 
+##Container With Most Water 
+两个端点从两头往中间靠，矮的那个移动
 
+## Integer to Roman
+阿拉伯数字转化成罗马数字
 
+##Roman to Integer
+罗马数字转化成阿拉伯数字
+
+## Longest Common Prefix 
+N个串的最长公共前缀
+
+直接枚举判断就好
+
+## 3Sum
+选出triple ()和为0
+
+排序之后，枚举前两个数，然后two points维护第三个数
+根据单调性，注意一下不要重复就好
+
+## 3Sum Closest 
+选出triple ()的和最接近targe
+
+排序后，枚举第一个数，然后两头夹维护后两个数
+
+## 4Sum 
+找出四个数的和为target
+
+首先先类似3sum来一发O(n ^ 3)的枚举+two points , TLE
+觉得确实有点慢，于是来一发类似3Sum Closest的O(n ^ 2)，Python还是TLE，换C++过了
