@@ -83,3 +83,69 @@ N个串的最长公共前缀
 
 首先先类似3sum来一发O(n ^ 3)的枚举+two points , TLE
 觉得确实有点慢，于是来一发类似3Sum Closest的O(n ^ 2)，Python还是TLE，换C++过了
+
+## Letter Combinations of a Phone Number
+直接模拟就好
+
+##　Remove Nth Node From End of List 
+删除链表倒数第n个节点
+
+two points，维护两个指针，右指针先往右移动n步。
+然后再同步移，直到右指针到尾，就能推断出需要删的节点是哪个。
+
+## Valid Parentheses
+判断括号序列是否合法
+
+经典堆栈应用
+
+##Generate Parentheses 
+输出所有的合法括号 序列
+
+直接dfs，记录前缀和判断是否合法
+
+
+## Merge k Sorted Lists
+合并K个有序链表
+
+对应于两个链表的合并，K个就是维护K个指针，在K个value里找个最小的插入链表，然后后移。
+
+可以用堆或者优化队列来加速合并。O(sumlen * log (k))
+
+## Swap Nodes in Pairs 
+链表相邻两两交换
+
+直接模拟
+
+## Remove Duplicates from Sorted Array 
+去除重复元素
+
+排序之后直接离散化,233333
+
+## Remove Element 
+删除指定val的元素
+
+直接遍历一遍
+
+## Implement strStr()
+模拟strStr ()函数
+
+裸的KMP匹配一下
+
+##Divide Two Integers 
+不用除法，乘法的情况下，计算除法
+
+首先判断符号，保证是正数除以正数，直接用减法来模拟是会超时的
+
+采用二分法，直接二分答案需要乘法也是不行的
+
+二进制枚举，从高位开始
+
+##Substring with Concatenation of All Words
+直接枚举，然后切割子串，用map来统计一下，或者hash一下。
+
+## Next Permutation
+求一个全排列
+
+C++直接next_permutation就行了。。。。
+
+至于模拟的话，就直接贪心构造，从后往前枚举左指针，从后往前枚举右指针，插入然后排序贪心
