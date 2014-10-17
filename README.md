@@ -210,3 +210,21 @@ dfs的时候，如果当前这个数不取，那么后面和它一样的数都�
 # Multiply Strings 
 直接模拟高精度乘法
 
+# Jump Game II 
+首先容易想到n^2的DP
+然后发现可以用线段树之类的优化到nlgn
+最后其实可以O(n)做。
+按BFS分层来做，每次走一个区间，记录每一步可以到达的最远的位置
+
+# Permutation I & II
+sort , next_permutation , unique大法好
+
+# Rotate image
+直接做
+
+# Anagrams
+题意很坑而已
+直接对每个串sort，放进map里面
+
+# pow (x , n)
+直接上二分快速幂，注意指数为负的情况
