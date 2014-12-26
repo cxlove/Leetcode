@@ -228,3 +228,30 @@ sort , next_permutation , unique大法好
 
 # pow (x , n)
 直接上二分快速幂，注意指数为负的情况
+
+# Maximum Subarray
+维护前缀和的最小值，然后每次当前的前缀和剪去前缀的前缀的最小值就OK了。
+O(n)
+
+#Sprial Matrix
+没啥好说的，暴力。
+
+#Jump Game
+维护能够到达最远的位置，然后一个个枚举
+
+#Merge Intervals 
+按左端点升序，然后每次和最后一个比较一下是否能够合并就行
+
+#Insert Interval 
+我懒，直接append之后按上一题来做
+
+#Length of Last Word
+strip()之后暴力。。。
+
+#Spiral Matrix II
+blablabla
+
+#Permutation Sequence
+按位枚举
+
+
