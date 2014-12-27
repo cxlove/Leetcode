@@ -203,55 +203,55 @@ dfs的时候，如果当前这个数不取，那么后面和它一样的数都�
 
 做法也比较厉害，原本数组下标是0到n-1，我们遍历数组让其中数字A出现在下标A-1中。然后遍历一次就好了。
 
-#Trapping Rain Water
+##Trapping Rain Water
 对于每个位置，水高是左右最大值的最小值
 所以处理前缀的最大值，和后缀的最大值，然后枚举就行。
 
-# Multiply Strings 
+## Multiply Strings 
 直接模拟高精度乘法
 
-# Jump Game II 
+## Jump Game II 
 首先容易想到n^2的DP
 然后发现可以用线段树之类的优化到nlgn
 最后其实可以O(n)做。
 按BFS分层来做，每次走一个区间，记录每一步可以到达的最远的位置
 
-# Permutation I & II
+## Permutation I & II
 sort , next_permutation , unique大法好
 
-# Rotate image
+## Rotate image
 直接做
 
-# Anagrams
+## Anagrams
 题意很坑而已
 直接对每个串sort，放进map里面
 
-# pow (x , n)
+## pow (x , n)
 直接上二分快速幂，注意指数为负的情况
 
-# Maximum Subarray
+## Maximum Subarray
 维护前缀和的最小值，然后每次当前的前缀和剪去前缀的前缀的最小值就OK了。
 O(n)
 
-#Sprial Matrix
+##Sprial Matrix
 没啥好说的，暴力。
 
-#Jump Game
+##Jump Game
 维护能够到达最远的位置，然后一个个枚举
 
-#Merge Intervals 
+##Merge Intervals 
 按左端点升序，然后每次和最后一个比较一下是否能够合并就行
 
-#Insert Interval 
+##Insert Interval 
 我懒，直接append之后按上一题来做
 
-#Length of Last Word
+##Length of Last Word
 strip()之后暴力。。。
 
-#Spiral Matrix II
+##Spiral Matrix II
 blablabla
 
-#Permutation Sequence
+##Permutation Sequence
 按位枚举
 
 
