@@ -254,4 +254,11 @@ blablabla
 ##Permutation Sequence
 按位枚举
 
+## Summary Ranges 
+就是枚举，遍历一下就好了
+
+## Invert Binary Tree 
+没啥意思的题，就是递归交换左右子树
+
+
 
