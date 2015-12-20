@@ -260,5 +260,11 @@ blablabla
 ## Invert Binary Tree 
 没啥意思的题，就是递归交换左右子树
 
+## Palindrome Partitioning 
+暴搜好了～～～TAT
+
+## Longest Consecutive Sequence
+hash大法好
+
 
 
